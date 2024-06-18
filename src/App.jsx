@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchBar from './components/SearchBar/SearchBar';
@@ -8,7 +7,6 @@ import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
 import ImageModal from './components/ImageModal/ImageModal';
 import styles from './App.module.css';
-
 const API_KEY = 'v8Yz4MWJbqwoMFcY7cvCAKgXN3eAWzUE_29ha-bVlA0';
 const BASE_URL = 'https://api.unsplash.com/search/photos';
 
@@ -79,4 +77,5 @@ const App = () => {
 };
 
 export default App;
+
 

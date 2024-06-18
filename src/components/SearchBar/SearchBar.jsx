@@ -22,7 +22,7 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <header className={styles.searchBar}>
       <form onSubmit={handleSubmit}>
-        <input
+        <input className={styles.input}
           type="text"
           value={query}
           onChange={handleChange}
@@ -30,7 +30,7 @@ const SearchBar = ({ onSubmit }) => {
           autoFocus
           placeholder="Search images and photos"
         />
-        <button type="submit">Search</button>
+        <button className={styles.button} type="submit">Search</button>
       </form>
       <Toaster />
     </header>
