@@ -1,12 +1,25 @@
-.ImageGallery {
-    display: flex;
-    flex-wrap: wrap;
+.gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
     padding: 20px;
     justify-items: center;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galleryItem {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galleryItem:nth-child(odd) {
+    transform: translateY(20px);
+}
+
+.galleryItem:hover {
+    transform: scale(1.05) translateY(20px);
 }
